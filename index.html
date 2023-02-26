@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="section">
+
+        <div class="start-screen" id="start-screen">
+            <div class="header">
+                <img src="https://image3.mouthshut.com/images/imagesp/925915639s.png" alt="testbook-logo">
+            </div>
+            <h1 id="firstheading">Hello user!</h1>
+            <h2>Enter your name to cotinue the quiz.</h2>
+            <div class="user-details">
+                <input type="text" name="username" id="user-name" placeholder="ENTER YOUR NAME" autocomplete="off">
+                <button id="enter">Enter</button>
+            </div>
+            <p id="error"> </p>
+            <div class="category">
+                <h1>Select Category</h1>
+                <div class="div1">
+                    <button id="category1btn">Pipes and Cisterns</button>
+                    <button id="category2btn">Probablity</button>
+                </div>
+                <div class="div2">
+                    <button id="category3btn">Problem On Ages</button>
+                    <button id="category4btn">Profit And Loss</button>
+                </div>
+            </div>
+        </div>
+        <div class="display-container hide" id="display-container">
+            <div class="display-header">
+                <h2 id="category-name">Pipes And Cisterns</h2>
+                <div class="score-time-header">
+                    <span id="time" class="remaining-time">10s</span>
+                    <span id="score">SCORE:0</span>
+                </div>
+            </div>
+            <div class="number-of-count">
+                <span class="number-of-question" id="number-of-question">4/10</span>
+            </div>
+            <div class="question-div">
+                <p id="question">A tank is filled by three pipes with uniform flow. The first two pipes operating simultaneously fill
+                    the tank in the
+                    same time during which the tank is filled by the third pipe alone. The second pipe fills the tank 5
+                    hours faster than
+                    the first pipe and 4 hours slower than the third pipe. The time required by the first pipe is:</p>
+            </div>
+            <div class="options">
+                <div class="opt1">
+                    <button id="option1" class="optionsbtn">6 Hours</button>
+                    <button id="option2" class="optionsbtn">10 Hours</button>
+                </div>
+                <div class="opt2">
+                    <button id="option3" class="optionsbtn">15 Hours</button>
+                    <button id="option4" class="optionsbtn">30 Hours</button>
+                </div>
+            </div>
+            <div class="nextbtn">
+                <button id="next-btn">Next Question</button>
+            </div>
+        </div>
+        <div class="result-container hide" id="result-container">
+            <h1>Quiz Result</h1>
+            <p> <span id="username" >Swapnil</span> your result is:</p>
+            <p>Total time taken <span id="timetaken">110</span>  seconds</p>
+            <p>Total question: <span>10</span></p>
+            <p>Attempt: <span id="attempted">10</span></p>
+            <p>Correct: <span id="correct">3</span></p>
+            <p>Wrong: <span id="wrong">7</span></p>
+            <p>Your Score: <span id="yourscore">7</span></p>
+            <p>Percentage: <span id="percentage">30.00%</span></p>
+            <div class="buttons">
+                <button id="startagain">Start Again</button>
+                <button id="gotohome">Go To Home</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
